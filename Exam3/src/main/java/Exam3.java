@@ -4,6 +4,11 @@
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
+
 public class Exam3 {
     public static void main(String[] args) {
         int max = 100;
@@ -51,35 +56,40 @@ public class Exam3 {
         System.out.println("------------分割线--------------");
 
         //排序
-        for(int k=0;k>10;k++){
+        System.out.println("这里是map中排列好的数据：");
+        for(int k=0;k<10;k++){
             int[] d = (int[])map.get(k);
-            for (int i = 1; i < d.length; i++) {
-                for (int j = 0; j < i - 1; j++) {
-                    if (d[j] > d[i]) {
-                        int temp = d[j];
-                        d[j] = d[i];
-                        d[i] = temp;
-                    }
-                }
-            }
-        }
-
-        //打印排序后的数据
-        System.out.println("这里是map中排序后的数据：");
-        for(int i = 0;i<10;i++){
-            int[] c = (int[])map.get(i);
-            System.out.print(i+"=>[");
-            for(int j=0;j<c.length;j++){
-                if(c[j]!=0){
-                    if(j==c.length-1){
-                        System.out.print(c[j]);
-                    }else{
-                        System.out.print(c[j]+",");
-                    }
-                }
+            Arrays.sort(d);
+            System.out.print(k+"=>[");
+            for(int i = 0 ;i<d.length;i++){
+                if(d[i] != 0)
+                    System.out.print(d[i]+",");
             }
             System.out.println("],");
         }
+
+
+        //排序222
+
+        //222
+
+
+//		//打印排序后的数据
+//		System.out.println("这里是map中排序后的数据：");
+//		for(int i = 0;i<10;i++){
+//			int[] c = (int[])map.get(i);
+//			System.out.print(i+"=>[");
+//			for(int j=0;j<c.length;j++){
+//				if(c[j]!=0){
+//					if(j==c.length-1){
+//						System.out.print(c[j]);
+//					}else{
+//						System.out.print(c[j]+",");
+//					}
+//				}
+//			}
+//			System.out.println("],");
+//		}
 
 //		System.out.println(Arrays.toString(nums));
     }
