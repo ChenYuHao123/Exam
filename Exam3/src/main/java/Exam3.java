@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Created by 1612143222 on 2018/8/4.
  */
 import java.util.Arrays;
@@ -26,7 +26,7 @@ public class Exam3 {
 
         //创建map，存放10个数组
         Map map = new HashMap<Integer, Arrays>();
-        for(int i=0;i<10;i++){
+        for(int i=0;i<=10;i++){
             map.put(i, new int[50]);
         }
 
